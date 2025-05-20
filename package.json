@@ -44,11 +44,9 @@
     "web3": "^1.6.1"
   },
   "scripts": {
-    "client": "craco  start",
-    "server": "cd backend & npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+ "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+  "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+  "start": "NODE_OPTIONS=--openssl-legacy-provider next start"
   },
   "eslintConfig": {
     "extends": [
